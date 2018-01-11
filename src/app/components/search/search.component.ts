@@ -48,8 +48,10 @@ export class SearchComponent implements OnInit {
   selectCar( selectedPosition: number ){
     if(this.mCarsCompare.length<=2){
       this.decidedCompareCars=false;
-      this.activatedRoute.params.subscribe( params =>{
-      this.mCarsCompare[this.mCount]=this._carService.getCar(selectedPosition);
+
+
+
+      this.mCarsCompare[this.mCount]=this.mCars[selectedPosition];
       this.mCount=this.mCount+1;
       if(this.mCount==2){
         this.mCount=0;
@@ -67,7 +69,7 @@ export class SearchComponent implements OnInit {
         }
       }
       console.log(this.mCarsCompare);
-      });
+
     }
   }
 
