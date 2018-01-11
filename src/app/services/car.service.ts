@@ -7,126 +7,126 @@ export class CarService {
       {
         mark: "TOYOTA",
         model: "2009",
-        price: "10000$",
+        price: 10000,
         color: "Blue",
         type: "Peta"
       },
       {
         mark: "SUZUKI",
         model: "2010",
-        price: "8000$",
+        price: 8000,
         color: "Blue",
         type: "Subaru Domingo"
       },
       {
         mark: "NISSAN",
         model: "2009",
-        price: "10000$",
+        price: 10000,
         color: "Blue",
         type: "Minibus"
       },
       {
         mark: "NISSAN",
         model: "2011",
-        price: "25000$",
+        price: 25000,
         color: "Blue",
         type: "Vagoneta"
       },
       {
         mark: "NISSAN",
         model: "2012",
-        price: "28000$",
+        price: 28000,
         color: "Blue",
         type: "Camioneta"
       },
       {
         mark: "Umbro",
         model: "2015",
-        price: "17500$",
+        price: 17500,
         color: "Blue",
         type: "Vagoneta"
       },
       {
         mark: "UMBRO",
         model: "2016",
-        price: "19500$",
+        price: 19500,
         color: "Blue",
         type: "Camioneta"
       },
       {
         mark: "TOYOTA",
         model: "2017",
-        price: "35000$",
+        price: 35000,
         color: "Red",
         type: "Camioneta"
       },
       {
         mark: "TOYOTA",
         model: "2018",
-        price: "30000$",
+        price: 30000,
         color: "White",
         type: "Vagoneta"
       },
       {
         mark: "TOYOTA",
         model: "2018",
-        price: "10000$",
+        price: 10000,
         color: "Blue",
         type: "Peta"
       },
       {
         mark: "SUZUKI",
         model: "2018",
-        price: "8000$",
+        price: 8000,
         color: "Blue",
         type: "Subaru Domingo"
       },
       {
         mark: "NISSAN",
         model: "2018",
-        price: "10000$",
+        price: 10000,
         color: "Blue",
         type: "Minibus"
       },
       {
         mark: "NISSAN",
         model: "2018",
-        price: "25000$",
+        price: 25000,
         color: "Blue",
         type: "Vagoneta"
       },
       {
         mark: "NISSAN",
         model: "2018",
-        price: "28000$",
+        price: 28000,
         color: "Blue",
         type: "Camioneta"
       },
       {
         mark: "Umbro",
         model: "2018",
-        price: "17500$",
+        price: 17500,
         color: "Blue",
         type: "Vagoneta"
       },
       {
         mark: "UMBRO",
         model: "2018",
-        price: "19500$",
+        price: 19500,
         color: "Blue",
         type: "Camioneta"
       },
       {
         mark: "TOYOTA",
         model: "2018",
-        price: "35000$",
+        price: 35000,
         color: "Red",
         type: "Camioneta"
       },
       {
         mark: "TOYOTA",
         model: "2018",
-        price: "30000$",
+        price: 30000,
         color: "White",
         type: "Vagoneta"
       }
@@ -166,7 +166,7 @@ export class CarService {
 export interface Car{
   mark: string;
   model: string;
-  price: string;
+  price: number;
   color: string;
   type: string;
 }

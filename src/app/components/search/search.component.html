@@ -1,4 +1,49 @@
 <div class="container top-30">
+  <br>
+  <div class="col-md-12" *ngIf="decidedCompareCars">
+    <div class="row">
+        <div class="col-md-5">
+          <div class="card animated fadeIn fast">
+            <div class="card-block">
+              <h4 class="card-title">{{ mCarCompare1.mark }}</h4>
+              <p class="card-text">{{ mCarCompare1.model }}</p>
+              <p class="card-text"><small>{{ mCarCompare1.color }}</small></p>
+              <button
+              type="button" class="btn btn-outline-primary btn-block" name="button">
+                <i class="fas fa-car"></i>
+                {{ mCarCompare1.price }} $us
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2" *ngIf="mExpensive">
+          <button type="button" class="btn btn-outline-primary btn-block">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-2" *ngIf="mCheap">
+          <button type="button" class="btn btn-outline-primary btn-block">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="col-md-5">
+          <div class="card animated fadeIn fast">
+            <div class="card-block">
+              <h4 class="card-title">{{ mCarCompare2.mark }}</h4>
+              <p class="card-text">{{ mCarCompare2.model }}</p>
+              <p class="card-text"><small>{{ mCarCompare2.color }}</small></p>
+              <button
+              type="button" class="btn btn-outline-primary btn-block" name="button">
+                <i class="fas fa-car"></i>
+                {{ mCarCompare2.price }} $us
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
   <div class="row">
     <div class="col-md-3">
       <label for="mDescription">Search the Car of your Dreams...</label>
@@ -21,7 +66,7 @@
               <button (click)="selectCar(i)"
               type="button" class="btn btn-outline-primary btn-block" name="button">
                 <i class="fas fa-car"></i>
-                {{ car.price }}
+                {{ car.price }} $us
               </button>
             </div>
           </div>
